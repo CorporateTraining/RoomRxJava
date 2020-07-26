@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RoonRxJava</string>
+    <string name="submit_activity">SubmitActivity</string>
+    <string name="view_activity">ViewActivity</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="user_gender">请输入性别（0或1）</string>
+    <string name="user_age">请输入年龄</string>
+    <string name="submit">submit</string>
 </resources>
