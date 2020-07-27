@@ -62,5 +62,9 @@ public class SubmitActivity extends AppCompatActivity {
     private boolean isAgeVerify() {
         return "".equals(userAge.getText().toString()) || Integer.parseInt(userAge.getText().toString()) <= 0;
     }
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        localPersonDataSource.getCompositeDisposable().clear();
+    }
 }

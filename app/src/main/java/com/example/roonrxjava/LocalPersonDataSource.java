@@ -49,4 +49,8 @@ public class LocalPersonDataSource {
                     textView.setText(stringBuilder);
                 }));
     }
+
+    public CompositeDisposable getCompositeDisposable() {
+        return compositeDisposable;
+    }
 }

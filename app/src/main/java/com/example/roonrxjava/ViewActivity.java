@@ -18,4 +18,10 @@ public class ViewActivity extends AppCompatActivity {
         localPersonDataSource = new LocalPersonDataSource(this);
         localPersonDataSource.getPersons(viewPersons);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        localPersonDataSource.getCompositeDisposable().clear();
+    }
 }
